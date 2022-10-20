@@ -159,7 +159,7 @@ psupertime <- function(x, y, y_labels=NULL, assay_type='logcounts',
 		stop('psupertime must be run with at least 3 time-series labels')
 	}
 	if (!is.null(y_labels)) {
-		if ( !is.character(y) ) {
+		if ( !is.character(y_labels) ) {
 			stop('y_labels must be a character vector')
 		}
 		if ( !all(y_labels %in% levels(y)) ) {
